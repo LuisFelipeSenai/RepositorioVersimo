@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loja-virtual.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Loja Virtual</title>
+    <style>
+        .popup-caixa {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 1000px;
+            height: 500px;
+            margin-top: -250px;
+            margin-left: -500px;
+            background: rgba(0, 0, 0, 0.5);
+            background-color: #661465;
+            font-family: 'Montserrat';
+        }
+
+
+        .fechar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <ul class="centro-lista-menu">
+            <li class="lista-menu">
+                <a class="link-menu" href="#">
+                    Quem somos
+                </a>
+            </li>
+
+            <li class="lista-menu">
+                <a class="link-menu" href="#">
+                    Promoções
+                </a>
+            </li>
+
+            <li class="lista-menu">
+                <a class="link-menu" href="#">
+                    <img class="logo-menu-cima " src="Logo-menu.png" alt="Logo">
+                </a>
+            </li>
+
+            <li class="lista-menu">
+                <a class="link-menu" href="#">
+                    Loja Virtual
+                </a>
+            </li>
+
+            <li class="lista-menu">
+                <a class="link-menu" href="#">
+                    Fale Conosco
+                </a>
+            </li>
+        </ul>
+    </header>
+
+<div class="caixas-livros">
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+
+    <div class="livro">
+        <img class="tamanho-img" src="Livro-Outsider.png" alt="Livro 1">
+        <h2 class="Nome-livro">Outsider - Stephen King</h2>
+        <img src="Estrelas.png" alt="estrelas">
+        <p class="preço">A partir de: <strong>R$ 29,99</strong></p>
+    </div>
+</div>
+
+    
+</div>
+
+    <footer>
+        <ul class="menu-baixo">
+            <li>
+                <img class="logo-menu-baixo" src="Logo-menu.png" alt="Logo">
+            </li>
+
+            <li>
+                Copyright © 2023 Versimo
+            </li>
+
+        </ul>
+    </footer>
+
+    <div class="popup-caixa" id="popup" onclick="fecharPopup()">
+        <div class="popup-conteudo" onclick="event.stopPropagation();">
+            <span class="fechar" onclick="fecharPopup()">&times;</span>
+
+            <body class="body">
+                <div class="Popup">
+                    <h1 class="titulo">PARABENS!!</h1>
+                    <h2 class="desconto"> VOCE GANHOU 10% DE DESCONTO! </h2>
+                    <input type="text" class="inputemail" placeholder="Email:">
+                    <label class="ofertas">
+                        <input type="checkbox" id="receberEmails" name="receberEmails" value="sim">
+                        Aceito receber ofertas nesse email
+                    </label>
+                    <button class="final">
+                        USAR AGORA
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        setTimeout(function () { abrirPopup(); }, 5000);
+
+        setTimeout(function () { fecharPopup(); }, 1000000);
+
+        function abrirPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
